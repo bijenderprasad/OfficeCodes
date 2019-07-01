@@ -1,6 +1,6 @@
-package Arrays;
+package misc;
 
-public class qqqqqqqqq {
+public class NumberOfAdjactPair {
 
 	public static void main(String[] args) {
 		int a[] = {1,1,1,3,3,4,5,5,5,3,3};

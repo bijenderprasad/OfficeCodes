@@ -1,5 +1,5 @@
 
-package Arrays;
+package Strings;
 import java.util.Arrays;
 import java.util.Scanner;
 public class kaminideveloper {

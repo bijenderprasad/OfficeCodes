@@ -1,4 +1,4 @@
-package Arrays;
+package Pattern;
 
 public class pattern1 {
 

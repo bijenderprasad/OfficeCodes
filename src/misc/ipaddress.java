@@ -1,4 +1,4 @@
-package Arrays;
+package misc;
 
 import java.net.InetAddress;
 import java.util.Scanner;

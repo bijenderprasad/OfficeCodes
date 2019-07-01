@@ -1,4 +1,4 @@
-package Arrays;
+package misc;
 
 public class TrailZerosinFact {
 
