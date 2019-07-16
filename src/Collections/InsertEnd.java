@@ -1,5 +1,11 @@
 package Collections;
 
+import java.awt.Cursor;
+import java.util.Iterator;
+
+import com.graphbuilder.struc.LinkedList;
+import com.sun.xml.bind.v2.runtime.reflect.ListIterator;
+
 public class InsertEnd {
 	
 	//Represent a node of the singly linked list  
@@ -32,6 +38,23 @@ public class InsertEnd {
     		
     }
     
+    public void addAtStart(int data ) {
+    	node nn = new node (data);
+    	if (head==null) {
+    		head = nn;
+    		tail = nn;
+    		
+    	}
+    	else
+    	//newNode will be added after tail such that tail's next will point to newNode  
+    		head.next= nn;
+    	//newNode will become new tail of the list  
+    		head = nn;
+    		
+    }
+    
+    
+    
     public void display() {  
         //Node current will point to head  
         node current = head;  
@@ -50,12 +73,27 @@ public class InsertEnd {
 	
 	public static void main(String[] args) {
 		 InsertEnd sList = new InsertEnd();  
-		  
+		 LinkedList ll = new LinkedList();
 	        //Adding 1 to the list  
-	        sList.addAtEnd(1);  
-	        sList.addAtEnd(2); 
-	        sList.addAtEnd(3);  
+	        sList.addAtStart(1);  
+	        sList.addAtStart(5);  
+	        sList.addAtStart(3);  
+	        sList.addAtStart(2);
+	        sList.addAtStart(12);
+	        
+
+
 	        sList.display();
+	        	        
+	        LinkedList linkedlist = new LinkedList();
+	     
+	        // Obtaining Iterator
+	      
+	        // Iterating the list in forward direction
+	        System.out.println("LinkedList elements:");
+	        while(it.hasNext()){
+	           System.out.println(it.next());
+	        }
 	}
 
 }
