@@ -73,15 +73,75 @@ public class PraticeLinkedList {
 		prev.next=temp.next;
 	 }
 	 
+	 void findLength() {
+		 node temp = head ;
+		 int len = 0;
+		 while (temp!=null) {
+			 len++;
+			 temp = temp.next;
+		 }
+		 System.out.println("length of list = " +len );
+	 }
+	 
+	 int returnLength() {
+		 node temp = head ;
+		 int len = 0;
+		 while (temp!=null) {
+			 len++;
+			 temp = temp.next;
+		 }
+		return len;
+	 }
+	 
+	 void nthElementfromStart(int key) {
+		 node temp = head;
+		 int count = 0;
+		 while (count!=key && temp!=null) {
+			 count++;
+			temp = temp.next; 
+		 }
+		 System.out.println("Element at nth place = " +temp.data);
+	 }
+	 
+	 
+	 void nthElementFromEnd(int key) {
+		 node temp = head;
+		 int count = returnLength() - key - 1;
+		 int loop = 0;
+		 while (count!=loop) {
+			 loop++;
+			 temp = temp.next;
+		 }
+		 System.out.println("Element at nth place from end = " +temp.data);
+	 }
+	 
+	 void occuranceOfElement(int num) {
+		 node temp = head;
+		 int count = 0 ;
+		 while (temp!=null) {
+			 if (temp.data == num) {
+				 count++;
+				 
+			 }temp = temp.next;
+		 }
+		 System.out.println(num + " occured in a linked list " + count+" times");
+	 }
+	 
 	 public static void main (String [] args) {
 		 PraticeLinkedList pl= new PraticeLinkedList();
-		 pl.append(1);
-		 pl.append(2);
-		 pl.append(3);
-		 pl.append(4);
+		 pl.append(11);
+		 pl.append(21);
+		 pl.append(43);
+		 pl.append(21);
+		 pl.append(14);
+		 pl.append(21);
 		pl.printList();
 		pl.deletenode(5);
 		pl.printList();
+		//pl.findLength();
+		//pl.nthElementfromStart(2);
+		//pl.nthElementFromEnd(1);
+		//pl.occuranceOfElement(21);
 		 
 	 }
 
