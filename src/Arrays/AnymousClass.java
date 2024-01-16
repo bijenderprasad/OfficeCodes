@@ -18,7 +18,7 @@ public class AnymousClass {
 		};
 
 		test t2 = new test() {
-
+//comment added
 			@Override
 			public void run() {
 				System.out.println("this is Bijender original method");
